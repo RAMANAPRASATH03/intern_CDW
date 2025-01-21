@@ -25,9 +25,9 @@ paragraph =  """I have three visions for India. In 3000 years of our history, pe
 # Cleaning the texts
 import re
 from nltk.corpus import stopwords
-from nltk.stem import SnowballStemmer
+from nltk.stem.porter import PorterStemmer
 from nltk.stem import WordNetLemmatizer
-ps = SnowballStemmer('english')
+ps = PorterStemmer()
 wordnet=WordNetLemmatizer()
 #sentences = nltk.sent_tokenize(paragraph)
 sentences = ['he is a good boy','she is a good girl','boy & girl are good']
@@ -45,3 +45,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer(max_features=500,ngram_range=(1,3))
 X = cv.fit_transform(corpus).toarray()
 cv.vocabulary_
+print(X)
+# from sklearn.feature_extraction.text import TfidfVectorizer
+# cv = TfidfVectorizer()
+# X = cv.fit_transform(corpus).toarray()
+# print(X)
