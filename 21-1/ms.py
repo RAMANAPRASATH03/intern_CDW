@@ -46,7 +46,7 @@ cv = CountVectorizer(max_features=500,ngram_range=(1,3))
 X = cv.fit_transform(corpus).toarray()
 cv.vocabulary_
 print(X)
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# cv = TfidfVectorizer()
-# X = cv.fit_transform(corpus).toarray()
-# print(X)
+from sklearn.feature_extraction.text import TfidfVectorizer
+cv = TfidfVectorizer()
+X = cv.fit_transform(corpus).toarray()
+print(X)

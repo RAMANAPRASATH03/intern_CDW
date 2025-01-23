@@ -1,0 +1,10 @@
+1.bag of words
+2.n-grams
+3.tf-idf
+4.one hot encoder
+5.vector space model 
+6.spacy
+7.word to vec
+8.cosine similarity
+9.skip gram
+10.

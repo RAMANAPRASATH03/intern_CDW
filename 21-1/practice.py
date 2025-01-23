@@ -19,6 +19,15 @@ df = pd.read_csv("C:/Users/Kavinprasath/Downloads/all_kindle_review.csv")
 # Preprocess the text
 stop_words = set(stopwords.words('english'))
 
+# #lemmatize the words given
+# from nltk.stem import WordNetLemmatizer
+# lemmatizer = WordNetLemmatizer()
+# review = [lemmatizer.lemmatize(word) for word in review]
+from nltk.stem.porter import PorterStemmer
+from nltk.stem import WordNetLemmatizer
+ps = PorterStemmer()
+wordnet=WordNetLemmatizer()
+
 def preprocess_text(text):
     text = text.lower()  # Convert to lowercase
     text = re.sub(r'[^\w\s]', '', text)  # Remove punctuation

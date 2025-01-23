@@ -1,0 +1,3 @@
+rnn 
+sequential data
+lstm
