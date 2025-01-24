@@ -1,3 +1,0 @@
-1.bag of words
-2.n-grams
-3.tf-idf
