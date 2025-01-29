@@ -1,8 +1,12 @@
 from dotenv import load_dotenv
 import streamlit as st
 import chain
+
+
 # Load environment variables
 load_dotenv()
+
+
 def code_generator_app():
     """
     Streamlit app for generating Python code based on a problem description.
@@ -21,5 +25,7 @@ def code_generator_app():
                 
             else:
                 st.warning("Please provide a problem description.")
+
+
 # Run the Streamlit app
 code_generator_app()

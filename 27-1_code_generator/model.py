@@ -1,4 +1,6 @@
 from langchain_groq import ChatGroq
+
+
 def create_chat_groq():
     """
     Initializes and returns the Groq LLM.

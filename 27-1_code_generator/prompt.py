@@ -1,5 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain import hub
+
+
 def code_generator_prompt():
     """
     Generates a prompt template for  code generation.
@@ -20,6 +22,8 @@ def code_generator_prompt():
         ("user", user_msg)
     ])
     return prompt_template
+
+
 def code_generator_prompt_from_hub():
     """
     Fetches the code generation prompt template from LangSmith Hub.
